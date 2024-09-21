@@ -12,3 +12,4 @@ class Project(models.Model):
 class Pledge(models.Model):
     amount = models.IntegerField()
     comment = models.CharField(max_length=200)
+
