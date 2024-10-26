@@ -12,22 +12,22 @@ Your crowdfunding project must:
 - [ ] Have a cool name, bonus points if it includes a pun and/or missing vowels. See https://namelix.com/ for inspiration. <sup><sup>(Bonus Points are meaningless)</sup></sup>
 - [ ] Have a clear target audience.
 - [ ] Have user accounts. A user should have at least the following attributes:
-  - [ ] Username
-  - [ ] Email address
-  - [ ] Password
+  - [ ] Username: Sicilia Perumalsamy
+  - [ ] Email address: siciliap1989@gmail.com
+  - [ ] Password: 
 - [ ] Ability to create a “project” to be crowdfunded which will include at least the following attributes:
-  - [ ] Title
-  - [ ] Owner (a user)
-  - [ ] Description
-  - [ ] Image
-  - [ ] Target amount to fundraise
-  - [ ] Whether it is currently open to accepting new supporters or not
-  - [ ] When the project was created
+  - [ ] Title: FrameFund 
+  - [ ] Owner (a user): Sicilia
+  - [ ] Description: Supporting the next generation of film frames in Perth.
+  - [ ] Image: Something filmy
+  - [ ] Target amount to fundraise: $10,000
+  - [ ] Whether it is currently open to accepting new supporters or not: Yes
+  - [ ] When the project was created: Start of Django project 
 - [ ] Ability to “pledge” to a project. A pledge should include at least the following attributes:
-  - [ ] An amount
-  - [ ] The project the pledge is for
-  - [ ] The supporter/user (i.e. who created the pledge)
-  - [ ] Whether the pledge is anonymous or not
+  - [ ] An amount: $100
+  - [ ] The project the pledge is for: FrameFund
+  - [ ] The supporter/user (i.e. who created the pledge): Sicilia
+  - [ ] Whether the pledge is anonymous or not: Yes, it will be anonymous
   - [ ] A comment to go along with the pledge
 - [ ] Implement suitable update/delete functionality, e.g. should a project owner be allowed to update a project description?
 - [ ] Implement suitable permissions, e.g. who is allowed to delete a pledge?
