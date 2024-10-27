@@ -1,15 +1,19 @@
 # crowdfunding_back_end_sp
 A repo to contain my She Codes Crowdfunding back end project 
+https://github.com/SiciliaCodes/crowdfunding_back_end_sp
 
 # Crowdfunding Back End
-{{ your name here }}
+Sicilia Perumalsamy 
 
 ## Planning:
 ### Concept/Name
-{{ Include a short description of your website concept here. }}
+FilmNest - A crowdfunding platform where budding filmmakers can "hatch" their creative ideas and raise funds for their film projects.
 
 ### Intended Audience/User Stories
-{{ Who are your intended audience? How will they use the website? }}
+Filmmakers (Project Creators)
+Film enthusiasts (Backers)
+Film industry professionals
+Film students
 
 ### Front End Pages/Functionality
 - {{ A page on the front end }}
@@ -21,16 +25,65 @@ A repo to contain my She Codes Crowdfunding back end project
     - {{ etc }}
 
 ### API Spec
-{{ Fill out the table below to define your endpoints. An example of what this might look like is shown at the bottom of the page. 
-
-It might look messy here in the PDF, but once it's rendered it looks very neat! 
-
-It can be helpful to keep the markdown preview open in VS Code so that you can see what you're typing more easily. }}
-
-| URL | HTTP Method | Purpose | Purpose | Request Body | Success Response Code | Authentication/Authorisation |
-| --- | ----------- | ------- | ------- | ------------ | --------------------- | ---------------------------- |
-|     |             |         |         |              |                       |                              |
+| URL | HTTP Method | Purpose  | Request Body | Success Response Code | Authentication/Authorisation |
+| --- | ----------- | -------  | ------------ | --------------------- | ---------------------------- |
+|  /api/projects   |  GET           |    List all projects     |  -       |      200        |           None            |     -                         |
+|  /api/projects   |   POST          |     Create project    |        {title, description, goal_amount, timeline} |     201         |      Token required                 |                              |
+|  /api/projects/{id}   |   GET          |     View project    |    -     |      200        |                None       |                              |
+|  /api/projects/{id}   |     PUT        |   Update project      |   {title, description, goal_amount, timeline}      |       200       |       Token + Owner                |                              |
+|  /api/projects/{id}  |     DELETE        |    Delete project     |   -      |       204       |         Token + Owner              |                              |
+|  /api/pledges   |    POST         |  Create pledge       |    {amount, project_id, comment}     |    201          |        Token required               |                              |
+|  /api/users   |       POST      |    Create account     |  {username, email, password}       |       201       |          None             |                              |
+|  /api/users/login |     POST        | User login        | {username, password}        |     200         |           None            |                              |
 
 ### DB Schema
-![]( {{ ./relative/path/to/your/schema/image.png }} )
+![ERD Screenshot](image-4.png)
 
+![A screenshot of Insomnia, demonstrating a successful POST method for any endpoint.](image.png)
+
+![Step by step instructions for how to register a new user and create a new project (i.e. endpoints and body data).](image-2.png)
+
+##
+Here's a summary of the step by step instructions: 
+1. To Register:
+
+Send POST request to /api/users/ with:
+
+    Username
+    Email
+    Password
+
+
+System returns user ID and details
+
+    To Login:
+
+Send POST request to /api/users/login/ with:
+
+    Username
+    Password
+
+System returns authentication token
+
+2. To Create Project:
+
+Send POST request to /api/projects/ with:
+
+    Authorisation token in header
+    Project title
+    Description
+    Goal amount
+    Timeline
+
+
+System returns project ID and details
+##
+
+![A screenshot of Insomnia, demonstrating a token being returned.](image-3.png)
+
+![A screenshot of Insomnia, demonstrating a successful GET method for any endpoint](image-5.png)
+
+![Lights, camera, action!](image-6.png)
+
+Link to successfully deployed project: https://filmnest-e068804cb3de.herokuapp.com/projects/
+![Deployment on Heroku](image-7.png)
