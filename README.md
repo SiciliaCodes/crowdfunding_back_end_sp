@@ -15,15 +15,6 @@ Film enthusiasts (Backers)
 Film industry professionals
 Film students
 
-### Front End Pages/Functionality
-- {{ A page on the front end }}
-    - {{ A list of dot-points showing functionality is available on this page }}
-    - {{ etc }}
-    - {{ etc }}
-- {{ A second page available on the front end }}
-    - {{ Another list of dot-points showing functionality }}
-    - {{ etc }}
-
 ### API Spec
 | URL | HTTP Method | Purpose  | Request Body | Success Response Code | Authentication/Authorisation |
 | --- | ----------- | -------  | ------------ | --------------------- | ---------------------------- |
@@ -85,5 +76,5 @@ System returns project ID and details
 
 ![Lights, camera, action!](image-6.png)
 
-Link to successfully deployed project: https://filmnest-e068804cb3de.herokuapp.com/projects/
+Link to successfully deployed project: **Previously deployed during project assessment; deployment no longer active.**
 ![Deployment on Heroku](image-7.png)
